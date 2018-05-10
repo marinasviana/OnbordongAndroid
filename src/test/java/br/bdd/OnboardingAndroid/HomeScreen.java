@@ -10,6 +10,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class HomeScreen {
 	private AppiumDriver<MobileElement> driver;
+	
 	public HomeScreen(AppiumDriver<MobileElement> driver)  {
 		PageFactory.initElements( new AppiumFieldDecorator(driver), this);
 		this.driver = driver;
@@ -18,7 +19,7 @@ public class HomeScreen {
 	@AndroidFindBy(id = "list_fab")
 	public RemoteWebElement  cad;
 	
-	public HomeScreen cadastro() {
+	public HomeScreen exibirCadastro() {
 		cad.click();
 		return this;
 	}

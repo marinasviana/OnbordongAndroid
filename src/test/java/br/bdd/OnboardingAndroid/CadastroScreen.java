@@ -15,6 +15,9 @@ public class CadastroScreen {
 		this.driver = driver;
 	  }
 	
+	@AndroidFindBy(id="list_fab")
+	public RemoteWebElement cadastrar;
+	
 	@AndroidFindBy(id = "dialog_edtName")
 	public RemoteWebElement  nome;
 	
